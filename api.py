@@ -33,7 +33,7 @@ plt.imshow(image_edge, cmap=plt.cm.gray)
 plt.axis('off')
 plt.show()
 # Adjust the contrast of the filtered image by applying Histogram Equalization
-image_edge_equalized = exposure.equalize_adapthist(image_edge/np.max(np.abs(image_sharpen)), clip_limit=0.03)
+image_edge_equalized = exposure.equalize_adapthist(image_edge/np.max(np.abs(image_edge)), clip_limit=0.03)
 plt.imshow(image_edge_equalized, cmap=plt.cm.gray)
 plt.axis('off')
 plt.show()
